@@ -75,11 +75,11 @@ $canevalself = has_capability('mod/ojt:evaluateself', $modcontext);
 $cansignoff = $ojt->managersignoff && has_capability('mod/ojt:signoff', $modcontext);
 $canmanage = has_capability('mod/ojt:manage', $modcontext);
 
-if ($canevalself && !($canevaluate || $cansignoff)) {
-    // Seeing as the user can only self-evaluate, but nothing else, redirect them straight to the eval page
-    redirect(new moodle_url($CFG->wwwroot.'/mod/ojt/evaluate.php',
-        array('userid' => $USER->id, 'bid' => $ojt->id)));
-}
+//if ($canevalself && !($canevaluate || $cansignoff)) {
+//    // Seeing as the user can only self-evaluate, but nothing else, redirect them straight to the eval page
+//    redirect(new moodle_url($CFG->wwwroot.'/mod/ojt/evaluate.php',
+//        array('userid' => $USER->id, 'bid' => $ojt->id)));
+//}
 
 
 // Output starts here.

@@ -69,7 +69,7 @@ if ($data = $form->get_data()) {
 
     if (empty($data->id)) {
         // Add
-        $topiccount = $DB->get_record('ojt_topic', array('ojtid' => $ojtid), 'COUNT(*)', MUST_EXIST);
+        $topiccount = $DB->get_record('ojt_topic', array('ojtid' => $ojtid), 'COUNT(*) as count', MUST_EXIST);
         $topic->position = $topiccount->count;
         $DB->insert_record('ojt_topic', $topic);
     } else {

@@ -31,7 +31,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_ojt';
 $plugin->version = 2024021300;
-$plugin->release = 'v1.1';
+$plugin->release = 'v1.1 - With Synapsys bugfixes for hL';
 $plugin->requires = 2017111309; // Requires Totara 13.
 $plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = array();

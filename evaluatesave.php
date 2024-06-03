@@ -87,10 +87,10 @@ if ($completion = $DB->get_record('ojt_completion', $params)) {
     // Insert
     $completion = (object)$params;
     switch ($action) {
+        case 'complete':
         case 'togglecompletion':
             $completion->status = OJT_COMPLETE;
             break;
-        case 'complete':
         case 'savecomment':
             $completion->comment = required_param('comment', PARAM_TEXT);
             // append a date to the comment string

@@ -58,7 +58,7 @@ M.mod_ojt_evaluate = M.mod_ojt_evaluate || {
         var config = this.config;
 
         // Init ojt topic item selection toggle
-        $('.mod-ojt-topic-item-selection-label').on('click', function() {
+        $('.mod-ojt-topic-item-selection-label').add('input.mod-ojt-topic-item-selection').on('click', function () {
             var topicitemselection = $(this);
             var itemid = topicitemselection.parent().attr('ojt-item-id');
             $.ajax({
